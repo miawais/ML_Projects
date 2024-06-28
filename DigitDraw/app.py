@@ -4,11 +4,13 @@ import tensorflow as tf
 from PIL import Image
 import io
 
-# Load the model
-model = tf.keras.models.load_model('mnist_cnn_model.h5')
-
+# Load the Flask app
 app = Flask(__name__)
 
+# Load the trained model
+model = tf.keras.models.load_model('mnist_cnn_model.h5')
+
+# Define routes
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -28,5 +30,6 @@ def predict():
     
     return jsonify({'digit': int(digit)})
 
+# Run the app
 if __name__ == '__main__':
     app.run(debug=True)

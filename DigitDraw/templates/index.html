@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digit Recognition</title>
-    <style>
-        canvas {
-            border: 1px solid black;
-        }
-    </style>
+    <title>DigitDraw: Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Draw a Digit</h1>
+    <h1>DigitDraw: Handwritten Digit Recognition</h1>
     <canvas id="canvas" width="280" height="280"></canvas>
     <br>
     <button onclick="clearCanvas()">Clear</button>
     <button onclick="predictDigit()">Predict</button>
     <p id="result"></p>
+    
     <script>
         let canvas = document.getElementById('canvas');
         let ctx = canvas.getContext('2d');
