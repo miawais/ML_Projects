@@ -5,7 +5,7 @@ Creating a `README.md` file is essential for documenting your project and provid
 
 DigitDraw is a web application that allows users to draw handwritten digits and uses a trained convolutional neural network (CNN) model to predict the digit drawn.
 
-![DigitDraw Demo](demo.png)
+
 
 ## Features
 
