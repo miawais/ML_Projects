@@ -1,0 +1,6 @@
+flask
+textblob
+nltk
+scikit-learn
+pandas
+joblib
